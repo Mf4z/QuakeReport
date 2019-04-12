@@ -22,4 +22,5 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <dimen name="list_item_height">88dp</dimen>
 </resources>
