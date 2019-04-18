@@ -4,12 +4,12 @@ public class Earthquake {
 
     private String mMagnitude;
     private String mLocation;
-    private String mDate;
+    private long mTimeInMilliseconds;
 
-    public Earthquake(String mMagnitude, String place, String date) {
+    public Earthquake(String mMagnitude, String place, long time) {
         this.mMagnitude = mMagnitude;
         this.mLocation = place;
-        this.mDate = date;
+        this.mTimeInMilliseconds = time;
     }
 
     public String  getmMagnitude() {
@@ -20,8 +20,8 @@ public class Earthquake {
         return mLocation;
     }
 
-    public String getmDate() {
-        return mDate;
+    public long getmTimeInMilliseconds() {
+        return mTimeInMilliseconds;
     }
 
 
@@ -31,7 +31,7 @@ public class Earthquake {
         return "Word{" +
                 "mMagnitude='" + mMagnitude + '\'' +
                 ", mLocation='" + mLocation + '\'' +
-                ", mDate=" + mDate +
+                ", mTimeInMilliseconds=" + mTimeInMilliseconds +
                 "}";
     }
 }
