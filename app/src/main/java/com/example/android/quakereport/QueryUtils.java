@@ -71,7 +71,7 @@ public final class QueryUtils {
                 JSONObject properties = object.getJSONObject("properties");
 
                 //Extracting values from the keys in the properties object
-                String magnitude = properties.optString("mag");
+                double magnitude = properties.optDouble("mag");
 
                 String location = properties.optString("place");
 
