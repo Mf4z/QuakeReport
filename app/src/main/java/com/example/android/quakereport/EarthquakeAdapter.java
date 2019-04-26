@@ -19,6 +19,8 @@ import java.util.List;
 public class EarthquakeAdapter extends ArrayAdapter <Earthquake>{
 
     private static final String LOCATION_SEPARATOR = " of ";
+    public static  String mQuakeUrl;
+
 
     public EarthquakeAdapter(Context context, List<Earthquake> objects) {
         super(context, 0, objects);
@@ -35,6 +37,9 @@ public class EarthquakeAdapter extends ArrayAdapter <Earthquake>{
         }
 
         Earthquake curQuake = getItem(position);
+
+        //url of current Earthquake
+        mQuakeUrl = curQuake.getmUrl();
 
         // Find the TextView with view ID date
         TextView magCol = listItemView.findViewById(R.id.tv_magnitude);

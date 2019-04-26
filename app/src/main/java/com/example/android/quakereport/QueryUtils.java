@@ -1,5 +1,6 @@
 package com.example.android.quakereport;
 
+import android.net.Uri;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -77,9 +78,11 @@ public final class QueryUtils {
 
                 long time = properties.optLong("time");
 
+                // Extract the value for the key called "url"
+                String url = properties.optString("url");
 
                 //Adding a new earthquake object with the etracted data
-                earthquakes.add(new Earthquake(magnitude,location,time));
+                earthquakes.add(new Earthquake(magnitude,location,time,url));
 
             }
 
