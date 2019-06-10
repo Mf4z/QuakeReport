@@ -20,4 +20,7 @@
   if no specific kilometer distance from the primary location is given [CHAR LIMIT=30] -->
     <string name="near_the">Near the</string>
 
+    <!-- Text to display in the list when there are no earthquakes [CHAR LIMIT=NONE] -->
+    <string name="no_earthquakes">No earthquakes found.</string>
+
 </resources>
