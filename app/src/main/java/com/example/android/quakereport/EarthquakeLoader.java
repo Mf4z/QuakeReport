@@ -2,6 +2,7 @@ package com.example.android.quakereport;
 
 import android.content.Context;
 import android.content.AsyncTaskLoader;
+import android.util.Log;
 
 import java.util.List;
 
@@ -27,6 +28,7 @@ public class EarthquakeLoader extends AsyncTaskLoader <List<Earthquake>>{
 
     @Override
     protected void onStartLoading() {
+
         forceLoad();
     }
 
@@ -36,6 +38,7 @@ public class EarthquakeLoader extends AsyncTaskLoader <List<Earthquake>>{
 
     @Override
     public List<Earthquake> loadInBackground() {
+
         if (mUrl == null) {
             return null;
         }
